@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 创建</title>
+    <style>
+        #content-id {
+            color: red;
+        }
+        .content-class {
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS 创建
+            当读到一个样式表时，浏览器会根据它来格式化HTML文档。
+
+            1、如何插入样式表
+                插入样式表的方法有三种：
+                a、外部样式表(External style sheet)
+                b、内部样式表(Internal style sheet)
+                c、内联样式(Inline style)
+
+            2、多重样式优先级
+                样式表允许以多种方式规定样式信息。样式可以规定在单个的HTML元素中，在HTML页的头元素中，或在一个外部的CSS文件中。
+                甚至可以在同一个HTML文档内部引用多个外部样式表。
+                一般情况下，优先级如下：
+                    内联样式（Inline style）> 内部样式（Internal style sheet）> 外部样式（External style sheet）> 浏览器默认样式
+
+                注意：如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式。
+
+                CSS 7中选择器
+                    id选择器
+                    类选择器
+                    伪类选择器
+                    属性选择器
+                    伪元素选择器
+                    通配选择器
+                    标签选择器
+
+                CSS优先规则：
+                    内联样式 > 内部样式表 > 外部样式表 > 浏览器样式表
+                    内联样式 > id 选择器 > 类选择器 = 伪类选择器 = 属性选择器 > 标签选择器 = 伪元素选择器
+    -->
+    <div class="content-class" id="content-id">CSS多重样式优先级测试</div>
+</body>
+</html>
