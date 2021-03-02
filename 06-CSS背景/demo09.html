@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 背景</title>
+    <style>
+        body {
+            background: #ffffff url("../images/img_tree.png") no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS 背景
+            CSS背景属性用于定义HTML元素的背景
+            CSS属性定义背景效果：
+                background-color
+                background-image
+                background-repeat
+                background-attachment
+                background-position
+
+            2、背景- 简写属性
+               body {
+                    background-image: url("../images/img_tree.png");
+                    background-repeat: no-repeat;
+                    background-position: right top;
+                    margin-right: 200px;
+                }
+               在以上实例中我们可以看到页面的背景颜色通过了很多的属性来控制。
+               为了简化这些属性的代码，我们可以将这些属性合并在同一个属性中.
+               背景颜色的简写属性为 "background":
+               body {background:#ffffff url('img_tree.png') no-repeat right top;}
+
+               当使用简写属性时，属性值的顺序为：
+               background-color
+               background-image
+               background-repeat
+               background-attachment
+               background-position
+
+               以上属性无需全部使用，你可以按照页面的实际需要使用.
+    -->
+    <h1>Hello World!</h1>
+    <p>背景图片不重复，设置position实例。</p>
+    <p>背景图片只显示一次，并与文本分开。</p>
+    <p>实例中还添加了margin-ringht属性用于让文本与图片间隔开。</p>
+</body>
+</html>

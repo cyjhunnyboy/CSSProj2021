@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 背景</title>
+    <style>
+        body {
+            background: #5d9ab2 url("../images/img_tree2.png") no-repeat top left;
+        }
+        .container {
+            text-align: center;
+        }
+        .center_div {
+            border: 1px solid gray;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 20%;
+            background-color: #d0f0f6;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS 背景
+            CSS背景属性用于定义HTML元素的背景
+            CSS属性定义背景效果：
+                background-color
+                background-image
+                background-repeat
+                background-attachment
+                background-position
+
+            2、背景- 简写属性
+               body {
+                    background-image: url("../images/img_tree.png");
+                    background-repeat: no-repeat;
+                    background-position: right top;
+                    margin-right: 200px;
+                }
+               在以上实例中我们可以看到页面的背景颜色通过了很多的属性来控制。
+               为了简化这些属性的代码，我们可以将这些属性合并在同一个属性中.
+               背景颜色的简写属性为 "background":
+               body {background:#ffffff url('img_tree.png') no-repeat right top;}
+
+               当使用简写属性时，属性值的顺序为：
+               background-color
+               background-image
+               background-repeat
+               background-attachment
+               background-position
+
+               以上属性无需全部使用，你可以按照页面的实际需要使用.
+    -->
+    <div class="container">
+        <div class="center_div">
+            <h1>Hello World!</h1>
+            <p>This example contains some advanced CSS methods you may not have learned yet.
+                But, we will explain these methods in a later chapter in the tutorial.</p>
+
+        </div>
+    </div>
+</body>
+</html>
