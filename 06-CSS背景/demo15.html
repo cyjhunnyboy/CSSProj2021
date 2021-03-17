@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 背景</title>
+    <style>
+        body {
+            background-image: url("../images/paper.gif");
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS 背景
+            1、CSS背景属性
+                property                            描述
+                background                          简写属性，作用是将背景属性设置在一个声明中。
+                background-attachment               背景图像是否固定或者随着页面的其余部分滚动。
+                background-color                    设置元素的背景颜色。
+                background-image                    把图像设置为背景。
+                background-position                 设置背景图像的起始位置。
+                background-repeat                   设置背景图像是否及如何重复。
+
+            2、CSS background-image 属性
+                1）浏览器支持
+                    表格中的数字表示支持该属性的第一个浏览器版本号。
+                    紧跟在-webkit-, -ms-或-moz-前的数字为支持该前缀属性的第一个浏览器版本号。
+                    属性              chrome      IE      firefox     Safari      Opera
+                    background          1.0      4.0        1.0         1.0        3.5
+                    注意：IE8及其更早版本不支持一个元素上设置多个背景图片。
+                2）标签定义及使用说明
+                    background-image属性设置一个元素的背景图像。
+                    元素的背景元素的总大小，包括填充和边距（但不包括边距）。
+                    默认情况下，background-image放置在元素的左上角，并重复垂直和水平方向。
+                    提示：请设置一种可用的背景颜色，这样的话，假如背景图片不可用，可以使用背景颜色代替。
+                    JavaScript语法：object object.style.backgroundImage = "url(../image/smile.gif)"
+                3）属性值
+                    值                                   描述
+                    url("URL")                          图像的URL
+                    none                                无图像背景会显示。这是默认。
+                    linear-gradient()	                创建一个线性渐变的 "图像"(从上到下)
+                    radial-gradient()	                用径向渐变创建 "图像"。 (center to edges)
+                    repeating-linear-gradient()	        创建重复的线性渐变 "图像"。
+                    repeating-radial-gradient()	        创建重复的径向渐变 "图像"
+                    inherit	                            指定背景图像应该从父元素继承
+    -->
+    <h1>Hello World!</h1>
+</body>
+</html>

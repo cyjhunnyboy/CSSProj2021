@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 背景</title>
+    <style>
+        body {
+            background-image: url("../images/smiley.gif");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS 背景
+            1、CSS背景属性
+                property                            描述
+                background                          简写属性，作用是将背景属性设置在一个声明中。
+                background-attachment               背景图像是否固定或者随着页面的其余部分滚动。
+                background-color                    设置元素的背景颜色。
+                background-image                    把图像设置为背景。
+                background-position                 设置背景图像的起始位置。
+                background-repeat                   设置背景图像是否及如何重复。
+
+            2、CSS background-position 属性
+                1）浏览器支持
+                    表格中的数字表示支持该属性的第一个浏览器版本号。
+                    紧跟在-webkit-, -ms-或-moz-前的数字为支持该前缀属性的第一个浏览器版本号。
+                    属性              chrome      IE      firefox     Safari      Opera
+                    background          1.0      4.0        1.0         1.0        3.5
+                    注意：IE8及其更早版本不支持一个元素上设置多个背景图片。
+                2）标签定义及使用说明
+                    background-position属性设置背景图像的起始位置。
+                    注意：对于这个工作在Firefox和Opera，background-attachment必须设置为“fixed（固定）”。
+                    JavaScript语法：object object.style.backgroundPosition = "center"
+                3）属性值
+                    值                                   描述
+                    left top                            如果仅指定一个关键字，其他值将会是"center"
+                    left center
+                    left bottom
+                    right top
+                    right center
+                    right bottom
+                    center top
+                    center center
+                    center bottom
+                    %x %y                               第一个值是水平位置，第二个值是垂直。左上角是0％0％。右下角是100％100％。
+                                                        如果仅指定了一个值，其他值将是50％。 默认值为：0％0％
+                    xpos ypos                           第一个值是水平位置，第二个值是垂直。左上角是0。单位可以是像素（0px0px）或任何其他CSS单位。
+                                                        如果仅指定了一个值，其他值将是50％。你可以混合使用％和positions
+                    inherit                             指定background-position属性设置应该从父元素继承。
+    -->
+    <!--
+        如何设置页面背景图像
+            这个例子演示了如何在页面上设置background-image。
+    -->
+    <p><b>注意：</b>该属性工作在Firefox和Opera，background-attachment属性会被设置为"fixed"。</p>
+</body>
+</html>
